@@ -15,7 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    buildDockerImage('my-app:latest', [MY_ARG: 'hello-world'])
+                    buildDockerImage('cool-python-app:latest', [BUILD_VERSION: '1.0'])
                 }
             }
         }
